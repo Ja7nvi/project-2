@@ -1,0 +1,136 @@
+            .main {
+                height: 100;
+                width: 100;
+                position: relative;
+            }
+            
+            body {
+                padding: 0;
+                margin: 0;
+            }
+            
+            .nav {
+                height: 100px;
+                width: 100%;
+                /* background-color: rebeccapurple; */
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 3vw;
+                border-bottom: 2px solid black;
+            }
+            
+            .nav h2 {
+                font-size: 2vw;
+                font-weight: 700;
+            }
+            
+            .navbar ul {
+                display: flex;
+                gap: 4vw;
+                align-items: center;
+            }
+            
+            .navbar ul li {
+                list-style: none;
+                font-size: 1.3vw;
+            }
+            
+            .navbar ul li a {
+                text-decoration: none;
+                color: black;
+            }
+            
+            .navbar ul li a:hover {
+                color: black;
+                border: 2px solid rgb(255, 255, 255);
+                background-color: lightseagreen;
+                border-radius: 5px;
+                padding: 4px;
+            }
+            
+            .nav i {
+                font-size: 1.6vw;
+                font-weight: 700;
+                display: none;
+            }
+            
+            .containt {
+                height: 600px;
+                width: 1530px;
+                /* background-color: burlywood; */
+                display: flex;
+                position: relative;
+            }
+            
+            .left {
+                height: 100%;
+                width: 55%;
+                padding: 5vw 8vw;
+            }
+            
+            .left h1 {
+                font-size: 4.2vw;
+                line-height: 4.4vw;
+            }
+            
+            .left h1 span {
+                color: lightseagreen;
+            }
+            
+            .left p {
+                font-size: 1.2vw;
+                font-weight: 600;
+                color: #666;
+                width: 80%;
+                margin-top: 3vw;
+                margin-bottom: 4vw;
+            }
+            
+            .right {
+                height: 100%;
+                width: 45%;
+            }
+            
+            button {
+                font-size: 1vw;
+                padding: 1vw 1.5vw;
+                background-color: lightseagreen;
+                color: #fff;
+                border: none;
+                border-radius: 7px;
+                font-weight: 700;
+            }
+            
+            button:hover {
+                color: white;
+                background-color: lightblue;
+            }
+            
+            .right img {
+                height: 100%;
+                width: 100%;
+            }
+            
+            @media (max-width: 600px) {
+                .nav {
+                    /* background-color: seagreen;
+                    color: white; */
+                    padding: 0 6vw;
+                    height: 60px;
+                }
+                .nav h2 {
+                    font-size: 6vw;
+                }
+                .nav ul li a {
+                    font-size: 4vw;
+                    display: none;
+                }
+                .nav i {
+                    display: block;
+                    font-size: 6vw;
+                }
+                .nav button {
+                    display: none;
+                }
+            }
